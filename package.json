@@ -14,7 +14,7 @@
   "type": "module",
   "sideEffects": false,
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "bin": {
     "wt-tracker": "./bin/wt-tracker"
