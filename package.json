@@ -1,0 +1,68 @@
+{
+  "name": "wt-tracker",
+  "description": "High performance WebTorrent tracker",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "author": "Novage",
+  "homepage": "https://github.com/Novage/wt-tracker",
+  "exports": "./src/index.ts",
+  "types": "./src/index.ts",
+  "publishConfig": {
+    "exports": "lib/index.js",
+    "types": "lib/index.d.ts"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "bin": {
+    "wt-tracker": "./bin/wt-tracker"
+  },
+  "keywords": [
+    "p2p",
+    "peer-to-peer",
+    "webrtc",
+    "torrent",
+    "bittorrent",
+    "bittorrent-tracker",
+    "webtorrent",
+    "tracker",
+    "websockets"
+  ],
+  "scripts": {
+    "start": "node ./src/run-tracker.ts",
+    "start:worker-demo": "DEBUG=wt-tracker:tracker-worker-*,wt-tracker:multi-worker-tracker,wt-tracker:uws-tracker node ./src/run-worker-tracker.ts",
+    "build": "npm run lint && npm run clean && npm run compile",
+    "compile": "tsc --noEmit false",
+    "lint": "eslint --flag unstable_native_nodejs_ts_config src",
+    "clean": "rimraf lib",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:compile": "tsc --project tsconfig.test.json --noEmit false",
+    "test:clean": "rimraf test_dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Novage/wt-tracker.git"
+  },
+  "dependencies": {
+    "debug": "^4.4.3",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.71.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/debug": "^4.1.13",
+    "@types/node": "^26.6.5",
+    "@types/ws": "^8.18.2",
+    "@vitest/coverage-v8": "^5.0.5",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "rimraf": "^6.1.3",
+    "ts-mockito": "^2.6.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5",
+    "ws": "^8.22.0"
+  }
+}

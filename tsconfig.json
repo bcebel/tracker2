@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ESnext",
+    "module": "NodeNext",
+    "lib": ["ES2024"],
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "noEmit": true,
+
+    "outDir": "./lib",
+    "rootDir": "./src",
+
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "erasableSyntaxOnly": true,
+    "noUncheckedSideEffectImports": true,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo"
+  },
+  "compileOnSave": true,
+  "include": ["src/**/*"]
+}
