@@ -1,8 +1,0 @@
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./test_dist",
-    "types": ["node"]
-  },
-  "include": ["src/tracker.ts", "src/fast-tracker.ts", "test/**/*"]
-}

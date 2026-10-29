@@ -1,0 +1,1272 @@
+{
+  "env": {
+    "cpu": "Apple M1",
+    "cores": 8,
+    "os": "darwin 27.0.0",
+    "node": "v26.3.0"
+  },
+  "smoke_same": true,
+  "runs": [
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": true,
+      "deflate_negotiated": 3000,
+      "duration_s": 15.000063542,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "deflate js ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.3307902520618,
+        "answers_received": 6002.641238678028,
+        "answers_sent": 6002.641238678028,
+        "offers": 6002.641238678028,
+        "received": 12605.546601223858,
+        "replies": 600.2641238678028,
+        "sent": 6602.972028930089,
+        "stops": 0,
+        "wire_in_bytes": 18525351.390808128,
+        "wire_out_bytes": 4786608.456621697
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 2.963,
+        "p50": 0.521,
+        "p99": 1.496,
+        "samples": 8999
+      },
+      "server": {
+        "cpu_cores": 0.4279981869426137,
+        "cpu_us_per_message": 22.281686327998916,
+        "rss_bytes": 110313472,
+        "rss_bytes_per_conn": 36771.157333333336,
+        "rss_bytes_per_conn_above_idle": 4035.925333333333,
+        "rss_idle_bytes": 98205696
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": true,
+      "deflate_negotiated": 3000,
+      "duration_s": 15.000603792,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "deflate rust-1 ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.3091692084071,
+        "answers_received": 6003.09169208407,
+        "answers_sent": 6003.09169208407,
+        "offers": 6003.09169208407,
+        "received": 12606.492553376547,
+        "replies": 600.3091692084071,
+        "sent": 6603.400861292477,
+        "stops": 0,
+        "wire_in_bytes": 10669013.742323633,
+        "wire_out_bytes": 4786929.046035829
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 2.763,
+        "p50": 0.274,
+        "p99": 0.951,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.4453154081412726,
+        "cpu_us_per_message": 23.181565796779573,
+        "rss_bytes": 19283968,
+        "rss_bytes_per_conn": 6427.989333333333,
+        "rss_bytes_per_conn_above_idle": 5259.264,
+        "rss_idle_bytes": 3506176
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 170170,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": true,
+      "deflate_negotiated": 3000,
+      "duration_s": 15.0017695,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "deflate rust-n-in ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.2625223644451,
+        "answers_received": 6003.158494069649,
+        "answers_sent": 6002.625223644451,
+        "offers": 6002.625223644451,
+        "received": 12606.046240078545,
+        "replies": 600.2625223644451,
+        "sent": 6602.887746008896,
+        "stops": 0,
+        "wire_in_bytes": 18526122.668395884,
+        "wire_out_bytes": 4786570.610886936
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 2.995,
+        "p50": 0.339,
+        "p99": 1.154,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.3392933080327624,
+        "cpu_us_per_message": 17.66330751506066,
+        "rss_bytes": 19791872,
+        "rss_bytes_per_conn": 6597.290666666667,
+        "rss_bytes_per_conn_above_idle": 5259.264,
+        "rss_idle_bytes": 4014080
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 170188,
+        "remoteRequests": 0,
+        "movedConnections": 2605
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": true,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000795167,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "deflate rust-n-off ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.434836935468,
+        "answers_received": 6004.34836935468,
+        "answers_sent": 6004.34836935468,
+        "offers": 6004.34836935468,
+        "received": 12609.131575644828,
+        "replies": 600.434836935468,
+        "sent": 6604.783206290147,
+        "stops": 0,
+        "wire_in_bytes": 18530619.93750241,
+        "wire_out_bytes": 18235806.432567097
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.059,
+        "p50": 0.272,
+        "p99": 1.304,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.25265327323031234,
+        "cpu_us_per_message": 13.149494837348726,
+        "rss_bytes": 19202048,
+        "rss_bytes_per_conn": 6400.682666666667,
+        "rss_bytes_per_conn_above_idle": 5051.733333333334,
+        "rss_idle_bytes": 4046848
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 170200,
+        "remoteRequests": 0,
+        "movedConnections": 2574
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": true,
+      "deflate_negotiated": 3000,
+      "duration_s": 15.000588625,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "deflate rust-n ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.2431121265416,
+        "answers_received": 6002.431121265416,
+        "answers_sent": 6002.431121265416,
+        "offers": 6002.431121265416,
+        "received": 12605.105354657373,
+        "replies": 600.2431121265416,
+        "sent": 6602.674233391957,
+        "stops": 0,
+        "wire_in_bytes": 10667827.909986433,
+        "wire_out_bytes": 4786409.839967197
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.085,
+        "p50": 0.281,
+        "p99": 0.991,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.5033135824695013,
+        "cpu_us_per_message": 26.2036317192359,
+        "rss_bytes": 22659072,
+        "rss_bytes_per_conn": 7553.024,
+        "rss_bytes_per_conn_above_idle": 6193.152,
+        "rss_idle_bytes": 4079616
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 170165,
+        "remoteRequests": 0,
+        "movedConnections": 2563
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3940,
+      "conns": 4000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000805167,
+      "failed": 60,
+      "failures": {
+        "HTTP error: 404 Not Found": 35,
+        "IO error: Broken pipe (os error 32)": 4,
+        "IO error: Connection reset by peer (os error 54)": 20,
+        "IO error: Invalid argument (os error 22)": 1
+      },
+      "interval_s": 1,
+      "label": "heavy js-workers ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 3942.8550228833196,
+        "answers_received": 39609.34052440787,
+        "answers_sent": 39495.813284966986,
+        "offers": 39495.813284966986,
+        "received": 83059.67487271744,
+        "replies": 3954.5210633425995,
+        "sent": 43438.668307850305,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 939.007,
+        "p50": 345.343,
+        "p99": 722.431,
+        "samples": 59249
+      },
+      "server": {
+        "cpu_cores": 1.2332671342667536,
+        "cpu_us_per_message": 9.749274996482358,
+        "rss_bytes": 420741120,
+        "rss_bytes_per_conn": 106787.08629441625,
+        "rss_bytes_per_conn_above_idle": 57884.58883248731,
+        "rss_idle_bytes": 192675840
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 5,
+      "connected": 4000,
+      "conns": 4000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000920375,
+      "failed": 0,
+      "failures": {
+        "read error: WebSocket protocol error: Connection reset without closing handshake": 5
+      },
+      "interval_s": 1,
+      "label": "heavy js ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 4001.6877964396235,
+        "answers_received": 40016.944626972596,
+        "answers_sent": 40016.87796439623,
+        "offers": 40016.87796439623,
+        "received": 84035.51038780846,
+        "replies": 4001.6877964396235,
+        "sent": 44018.56576083586,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.065,
+        "p50": 0.579,
+        "p99": 1.714,
+        "samples": 60008
+      },
+      "server": {
+        "cpu_cores": 0.7079565609653469,
+        "cpu_us_per_message": 5.528574975962152,
+        "rss_bytes": 112836608,
+        "rss_bytes_per_conn": 28209.152,
+        "rss_bytes_per_conn_above_idle": 3518.464,
+        "rss_idle_bytes": 98762752
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 4000,
+      "conns": 4000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000404209,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 1,
+      "label": "heavy rust-1 ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 4001.7588302043337,
+        "answers_received": 40014.2550585318,
+        "answers_sent": 40015.321696455496,
+        "offers": 40015.321696455496,
+        "received": 84031.33558519164,
+        "replies": 4001.7588302043337,
+        "sent": 44017.08052665983,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 12.039,
+        "p50": 0.266,
+        "p99": 1.607,
+        "samples": 60002
+      },
+      "server": {
+        "cpu_cores": 0.46198755069827474,
+        "cpu_us_per_message": 3.607913043568804,
+        "rss_bytes": 25886720,
+        "rss_bytes_per_conn": 6471.68,
+        "rss_bytes_per_conn_above_idle": 5599.232,
+        "rss_idle_bytes": 3489792
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 832497,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 4000,
+      "conns": 4000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.00127775,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 1,
+      "label": "heavy rust-n-hash ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 4001.8591083016245,
+        "answers_received": 40024.85721591282,
+        "answers_sent": 40023.25735219455,
+        "offers": 40023.25735219455,
+        "received": 84050.44030332683,
+        "replies": 4002.325735219455,
+        "sent": 44025.116460496174,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.697,
+        "p50": 0.469,
+        "p99": 1.975,
+        "samples": 60000
+      },
+      "server": {
+        "cpu_cores": 1.2998892710989236,
+        "cpu_us_per_message": 10.149393872993087,
+        "rss_bytes": 27623424,
+        "rss_bytes_per_conn": 6905.856,
+        "rss_bytes_per_conn_above_idle": 5910.528,
+        "rss_idle_bytes": 3981312
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 113268,
+        "remoteRequests": 719417,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 4000,
+      "conns": 4000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.001439791,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 1,
+      "label": "heavy rust-n ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 4001.682560897598,
+        "answers_received": 40017.42555138987,
+        "answers_sent": 40016.825608975974,
+        "offers": 40016.825608975974,
+        "received": 84035.93372126344,
+        "replies": 4001.682560897598,
+        "sent": 44018.508169873574,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.121,
+        "p50": 0.291,
+        "p99": 1.747,
+        "samples": 60006
+      },
+      "server": {
+        "cpu_cores": 0.616607480939894,
+        "cpu_us_per_message": 4.815197909839713,
+        "rss_bytes": 27590656,
+        "rss_bytes_per_conn": 6897.664,
+        "rss_bytes_per_conn_above_idle": 5902.336,
+        "rss_idle_bytes": 3981312
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 832637,
+        "remoteRequests": 0,
+        "movedConnections": 3482
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 2996,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000954084,
+      "failed": 4,
+      "failures": {
+        "HTTP error: 404 Not Found": 4
+      },
+      "interval_s": 5,
+      "label": "light js-workers ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 599.3618772281818,
+        "answers_received": 5994.285396547448,
+        "answers_sent": 5993.618772281818,
+        "offers": 5993.618772281818,
+        "received": 12587.266046057448,
+        "replies": 599.3618772281818,
+        "sent": 6592.980649509999,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 47.903,
+        "p50": 0.543,
+        "p99": 18.495,
+        "samples": 8988
+      },
+      "server": {
+        "cpu_cores": 0.838613326162888,
+        "cpu_us_per_message": 43.72276016432528,
+        "rss_bytes": 490274816,
+        "rss_bytes_per_conn": 163643.129506008,
+        "rss_bytes_per_conn_above_idle": 75319.36982643524,
+        "rss_idle_bytes": 264617984
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000395542,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light js-workers wss",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.184173463444,
+        "answers_received": 6001.1750855469545,
+        "answers_sent": 6001.1750855469545,
+        "offers": 6001.2417504557025,
+        "received": 12602.534344557353,
+        "replies": 600.1175085546954,
+        "sent": 6601.359259010398,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 10.983,
+        "p50": 0.517,
+        "p99": 2.861,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.6513161584736031,
+        "cpu_us_per_message": 33.915838731401834,
+        "rss_bytes": 220921856,
+        "rss_bytes_per_conn": 73640.61866666666,
+        "rss_bytes_per_conn_above_idle": 0,
+        "rss_idle_bytes": 336527360
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "wss://localhost:18443/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000226083,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light js ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.3909507875115,
+        "answers_received": 6003.909507875116,
+        "answers_sent": 6003.909507875116,
+        "offers": 6003.909507875116,
+        "received": 12608.209966537743,
+        "replies": 600.3909507875115,
+        "sent": 6604.3004586626275,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.407,
+        "p50": 0.503,
+        "p99": 1.904,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.41199379034719313,
+        "cpu_us_per_message": 21.444037308461027,
+        "rss_bytes": 108822528,
+        "rss_bytes_per_conn": 36274.176,
+        "rss_bytes_per_conn_above_idle": 4057.770666666667,
+        "rss_idle_bytes": 96649216
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.002002875,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light js wss",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.3198422930578,
+        "answers_received": 6003.198422930578,
+        "answers_sent": 6002.598503034882,
+        "offers": 6002.531845268693,
+        "received": 12605.983452726141,
+        "replies": 600.2531845268694,
+        "sent": 6602.91834532794,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.511,
+        "p50": 0.557,
+        "p99": 1.863,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.45193965475759845,
+        "cpu_us_per_message": 23.5276154518829,
+        "rss_bytes": 121651200,
+        "rss_bytes_per_conn": 40550.4,
+        "rss_bytes_per_conn_above_idle": 7782.4,
+        "rss_idle_bytes": 98304000
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "wss://localhost:18443/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.001145333,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light rust-1 ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.0875133312062,
+        "answers_received": 6002.208364845791,
+        "answers_sent": 6002.208364845791,
+        "offers": 6002.208364845791,
+        "received": 12604.637566176161,
+        "replies": 600.2208364845791,
+        "sent": 6602.295878176998,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 10.287,
+        "p50": 0.241,
+        "p99": 1.515,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.1993181142924135,
+        "cpu_us_per_message": 10.377404330050044,
+        "rss_bytes": 17858560,
+        "rss_bytes_per_conn": 5952.8533333333335,
+        "rss_bytes_per_conn_above_idle": 4789.589333333333,
+        "rss_idle_bytes": 3489792
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 170133,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000800375,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light rust-1 wss",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.1679760370786,
+        "answers_received": 6002.346391467128,
+        "answers_sent": 6002.21306524786,
+        "offers": 6002.21306524786,
+        "received": 12604.727432752068,
+        "replies": 600.1679760370786,
+        "sent": 6602.381041284939,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 25.935,
+        "p50": 0.239,
+        "p99": 1.308,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.24198708797229757,
+        "cpu_us_per_message": 12.59882966243466,
+        "rss_bytes": 26689536,
+        "rss_bytes_per_conn": 8896.512,
+        "rss_bytes_per_conn_above_idle": 7727.786666666667,
+        "rss_idle_bytes": 3506176
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "wss://localhost:18443/",
+      "placement": {
+        "localRequests": 170146,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.001902917,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light rust-n-hash ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.3238422370067,
+        "answers_received": 6003.238422370067,
+        "answers_sent": 6003.238422370067,
+        "offers": 6003.238422370067,
+        "received": 12606.800686977142,
+        "replies": 600.3238422370067,
+        "sent": 6603.562264607074,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.101,
+        "p50": 0.347,
+        "p99": 1.364,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.35862117157840284,
+        "cpu_us_per_message": 18.668110148789697,
+        "rss_bytes": 19841024,
+        "rss_bytes_per_conn": 6613.674666666667,
+        "rss_bytes_per_conn_above_idle": 5286.5706666666665,
+        "rss_idle_bytes": 3981312
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 24350,
+        "remoteRequests": 145852,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000673291,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light rust-n-hash wss",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.3730516151803,
+        "answers_received": 6003.063879407838,
+        "answers_sent": 6003.063879407838,
+        "offers": 6003.063879407838,
+        "received": 12606.434146756459,
+        "replies": 600.3063879407838,
+        "sent": 6603.436931023018,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.137,
+        "p50": 0.37,
+        "p99": 1.438,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.3866493114998941,
+        "cpu_us_per_message": 20.127636980715646,
+        "rss_bytes": 39370752,
+        "rss_bytes_per_conn": 13123.584,
+        "rss_bytes_per_conn_above_idle": 11785.557333333334,
+        "rss_idle_bytes": 4014080
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "wss://localhost:18443/",
+      "placement": {
+        "localRequests": 21715,
+        "remoteRequests": 148452,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.00049525,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light rust-n ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.2468485165515,
+        "answers_received": 6001.8018405092325,
+        "answers_sent": 6001.8018405092325,
+        "offers": 6001.8018405092325,
+        "received": 12603.783865069388,
+        "replies": 600.1801840509232,
+        "sent": 6602.048689025784,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 3.059,
+        "p50": 0.22,
+        "p99": 1.042,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.2253258938234056,
+        "cpu_us_per_message": 11.732159654560789,
+        "rss_bytes": 19365888,
+        "rss_bytes_per_conn": 6455.296,
+        "rss_bytes_per_conn_above_idle": 5122.730666666666,
+        "rss_idle_bytes": 3997696
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 170149,
+        "remoteRequests": 0,
+        "movedConnections": 2559
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.00166725,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "light rust-n wss",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 600.1999544417305,
+        "answers_received": 6001.999544417305,
+        "answers_sent": 6001.999544417305,
+        "offers": 6001.999544417305,
+        "received": 12604.19904327634,
+        "replies": 600.1999544417305,
+        "sent": 6602.199498859035,
+        "stops": 0,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 1,
+      "rtt_ms": {
+        "max": 2.727,
+        "p50": 0.241,
+        "p99": 1.138,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.2733029557098062,
+        "cpu_us_per_message": 14.229786761439359,
+        "rss_bytes": 38060032,
+        "rss_bytes_per_conn": 12686.677333333333,
+        "rss_bytes_per_conn_above_idle": 11348.650666666666,
+        "rss_idle_bytes": 4014080
+      },
+      "streams": 1,
+      "swarms": 100,
+      "switch_s": 0,
+      "url": "wss://localhost:18443/",
+      "placement": {
+        "localRequests": 170147,
+        "remoteRequests": 0,
+        "movedConnections": 2571
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 2937,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.00067925,
+      "failed": 63,
+      "failures": {
+        "HTTP error: 404 Not Found": 63
+      },
+      "interval_s": 5,
+      "label": "media js-workers ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 1476.0664921223486,
+        "answers_received": 14122.22716514654,
+        "answers_sent": 14122.22716514654,
+        "offers": 14122.293828794453,
+        "received": 29720.454158767512,
+        "replies": 1475.9331648265195,
+        "sent": 15885.080670596968,
+        "stops": 286.7870133280798,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 4,
+      "rtt_ms": {
+        "max": 2.831,
+        "p50": 0.599,
+        "p99": 1.898,
+        "samples": 8811
+      },
+      "server": {
+        "cpu_cores": 0.8566278757010288,
+        "cpu_us_per_message": 18.78341913774605,
+        "rss_bytes": 526712832,
+        "rss_bytes_per_conn": 179337.02145045967,
+        "rss_bytes_per_conn_above_idle": 99999.85835886959,
+        "rss_idle_bytes": 233013248
+      },
+      "streams": 2,
+      "swarms": 100,
+      "switch_s": 10,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000898333,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "media js ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 1509.7762478782608,
+        "answers_received": 14439.468569925411,
+        "answers_sent": 14439.73522062267,
+        "offers": 14439.73522062267,
+        "received": 30388.980038426344,
+        "replies": 1509.7762478782608,
+        "sent": 16240.62736723302,
+        "stops": 291.1158987320896,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 4,
+      "rtt_ms": {
+        "max": 3.711,
+        "p50": 0.663,
+        "p99": 2.151,
+        "samples": 9001
+      },
+      "server": {
+        "cpu_cores": 0.4819711352949412,
+        "cpu_us_per_message": 10.336161124025356,
+        "rss_bytes": 110657536,
+        "rss_bytes_per_conn": 36885.84533333333,
+        "rss_bytes_per_conn_above_idle": 4407.296,
+        "rss_idle_bytes": 97435648
+      },
+      "streams": 2,
+      "swarms": 100,
+      "switch_s": 10,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 0,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.000897959,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "media rust-1 ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 1509.5096348158554,
+        "answers_received": 14437.002410916806,
+        "answers_sent": 14437.069073592784,
+        "offers": 14437.069073592784,
+        "received": 30383.581119325445,
+        "replies": 1509.5096348158554,
+        "sent": 16237.561289046831,
+        "stops": 290.9825806381915,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 4,
+      "rtt_ms": {
+        "max": 38.751,
+        "p50": 0.377,
+        "p99": 2.461,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.38731014742448855,
+        "cpu_us_per_message": 8.307607394771498,
+        "rss_bytes": 23429120,
+        "rss_bytes_per_conn": 7809.706666666667,
+        "rss_bytes_per_conn_above_idle": 6635.52,
+        "rss_idle_bytes": 3522560
+      },
+      "streams": 2,
+      "swarms": 100,
+      "switch_s": 10,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 402240,
+        "remoteRequests": 0,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.001579458,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "media rust-n-hash ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 1509.5743793779932,
+        "answers_received": 14440.412798298828,
+        "answers_sent": 14440.412798298828,
+        "offers": 14440.412798298828,
+        "received": 30390.66661456602,
+        "replies": 1509.8410179683628,
+        "sent": 16241.156518360522,
+        "stops": 291.16934068370017,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 4,
+      "rtt_ms": {
+        "max": 2.757,
+        "p50": 0.499,
+        "p99": 2.103,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.9612321182827279,
+        "cpu_us_per_message": 20.613221909481936,
+        "rss_bytes": 23494656,
+        "rss_bytes_per_conn": 7831.552,
+        "rss_bytes_per_conn_above_idle": 6498.986666666667,
+        "rss_idle_bytes": 3997696
+      },
+      "streams": 2,
+      "swarms": 100,
+      "switch_s": 10,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 53960,
+        "remoteRequests": 348312,
+        "movedConnections": 0
+      }
+    },
+    {
+      "closed_early": 0,
+      "connected": 3000,
+      "conns": 3000,
+      "deflate": false,
+      "deflate_negotiated": 0,
+      "duration_s": 15.001289708,
+      "failed": 0,
+      "failures": {},
+      "interval_s": 5,
+      "label": "media rust-n ws",
+      "offers": 10,
+      "overlap_s": 5,
+      "per_second": {
+        "announces": 1509.4702149458683,
+        "answers_received": 14436.692058850544,
+        "answers_sent": 14436.692058850544,
+        "offers": 14436.692058850544,
+        "received": 30382.854332646955,
+        "replies": 1509.4702149458683,
+        "sent": 16237.270577482537,
+        "stops": 291.10830368612466,
+        "wire_in_bytes": null,
+        "wire_out_bytes": null
+      },
+      "qualities": 4,
+      "rtt_ms": {
+        "max": 3.117,
+        "p50": 0.355,
+        "p99": 1.956,
+        "samples": 9000
+      },
+      "server": {
+        "cpu_cores": 0.46062706170623346,
+        "cpu_us_per_message": 9.880433881165978,
+        "rss_bytes": 21135360,
+        "rss_bytes_per_conn": 7045.12,
+        "rss_bytes_per_conn_above_idle": 5712.554666666667,
+        "rss_idle_bytes": 3997696
+      },
+      "streams": 2,
+      "swarms": 100,
+      "switch_s": 10,
+      "url": "ws://127.0.0.1:18100/",
+      "placement": {
+        "localRequests": 402226,
+        "remoteRequests": 0,
+        "movedConnections": 2576
+      }
+    }
+  ]
+}

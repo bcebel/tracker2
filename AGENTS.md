@@ -1,0 +1,103 @@
+# AGENTS.md
+
+Instructions for any coding agent (and human) working in this repository.
+
+## Project
+
+Rust port of `../wt-tracker`, a WebTorrent tracker in Node.js + uWebSockets.js. The goals are
+multi-core operation, zero-copy message handling and fast WebSockets.
+
+- `crates/wt-core`: sans-IO tracker math (`Shard`): peers, swarms, offer routing.
+- `crates/wt-proto`: zero-copy wire protocol (JSON frames ↔ `wt-core`), byte-compatible with JS.
+- `crates/wt-server`: the multi-core WebSocket server (binary `wt-tracker`).
+- `crates/wt-loadgen`, `loadtest/run.sh`: load generator and the JS vs Rust load test.
+- `crates/wt-bench`: Rust benchmarks. `bench/js`: identical JS benchmarks against `../wt-tracker`.
+- `docs/SPEC.md`: **the specification and source of truth for behaviour.**
+- `.agents/skills/`: shared agent skills (`SKILL.md` format). `.claude/skills` is a symlink to
+  it for Claude Code; keep skills in `.agents/skills/` only.
+- `README.md` (overview, quick start, headline numbers), `CHANGELOG.md`, `SECURITY.md`,
+  `LICENSE` / `NOTICE`, `.github/workflows/ci.yml`, `rust-toolchain.toml` (Rust 1.98.1).
+
+## Specification rules
+
+Code and spec change together. A change is not finished while `docs/SPEC.md` describes the old
+behaviour.
+
+1. **Before changing code**, read `docs/SPEC.md`: at least §3–§6, plus the sections your change
+   touches. If the requested change contradicts the spec, say so and confirm the new behaviour
+   before implementing it.
+2. **With every code change**, update `docs/SPEC.md` in the same change:
+
+   | You changed | Update |
+   |---|---|
+   | request handling, offer selection, removal/expiry rules, outbox events | §5 |
+   | wire protocol: parsing rules, message layouts, errors, backends (`wt-proto`) | §7 |
+   | server: config, HTTP / upgrade, workers and routing, backpressure, stats (`wt-server`) | §13 |
+   | load generator or load test scenarios | §14 |
+   | `Settings` fields or defaults | §6 |
+   | data structures, `Key`, indices | §3, and §4 plus `check_invariants()` if invariants change |
+   | behaviour that now differs from (or matches) the JS `FastTracker` | §8 |
+   | test layout or requirements | §9 |
+   | benchmark scenarios (always add the Rust **and** the JS twin) | §10 |
+   | crates / directories / architecture | §2 |
+   | something done, or newly planned | §12 (planned work goes only here) |
+
+3. Describe the implemented behaviour precisely: names, defaults, edge cases, error variants. Put
+   no aspirations outside §12. Keep the section numbering; extend tables rather than adding
+   prose.
+4. **Never edit §11 (performance) by hand.** It is generated between the `perf-tables` markers.
+
+## Performance tables
+
+When a change can affect performance (anything in `crates/wt-core/src`, `crates/wt-proto/src`,
+`crates/wt-bench`, `bench/js`), regenerate §11:
+
+```bash
+./bench/run.sh
+```
+
+It takes about 3 minutes and needs `../wt-tracker` with its `node_modules` (or set
+`WT_TRACKER_DIR`). After server changes also run the end-to-end load test, which adds the load
+table to §11 (about 5 minutes):
+
+```bash
+./loadtest/run.sh
+```
+ Run it on an idle machine, because background load skews the results. The
+"Same messages" column must be `yes` for every twin scenario; `no` means Rust and JS diverged.
+Report significant regressions or improvements.
+
+## Finish checklist
+
+```bash
+cargo test --workspace
+cargo clippy --workspace --all-targets -- -D warnings
+cargo fmt --all --check
+node difftest/run.ts          # JS vs Rust differential test (needs ../wt-tracker)
+./scripts/check-spec.sh
+```
+
+`check-spec.sh` fails when code changed but `docs/SPEC.md` did not. If a change truly needs no
+spec update (a pure refactor, a comment, a dependency bump), rerun it with
+`SPEC_UNCHANGED_OK=1` and say why (in CI: label the pull request `spec-unchanged-ok`).
+
+CI (`.github/workflows/ci.yml`) runs this checklist on every pull request and push to `main`
+(the difftest against `Novage/wt-tracker` at the commit in `WT_TRACKER_REF`), and the Autobahn
+testsuite on pushes to `main`.
+
+Fuzzing (`fuzz/`, needs a nightly toolchain). Setup once, with rustup:
+
+```bash
+rustup toolchain install nightly --profile minimal
+cargo +nightly install cargo-fuzz --locked
+```
+
+Then `cargo +nightly fuzz run ws_frames -- -max_total_time=60` (also `deflate_roundtrip`,
+`http_upgrade`, `protocol`); what it finds stays in `fuzz/corpus/<target>/` (not committed). When you change the WebSocket
+codec, compression, HTTP upgrade or protocol, extend the target in `wt-server/src/fuzz.rs` or
+`wt-proto/src/fuzz.rs` and the seeds in `fuzz/make-seeds.py` (rerun it). A crash input from CI
+becomes a regression test.
+
+Add user-visible changes (behaviour, config, protocol, performance) to `CHANGELOG.md` under
+`Unreleased`. Keep `README.md` in line when the quick start, settings or headline numbers
+change.

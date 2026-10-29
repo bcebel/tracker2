@@ -1,0 +1,44 @@
+[package]
+name = "wt-server"
+version = "0.1.0"
+description = "Multi-core WebTorrent tracker server (own WebSocket framing + rustls) on wt-core and wt-proto"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "wt-tracker"
+path = "src/main.rs"
+
+[features]
+# Fuzz target entry points (`fuzz/`).
+fuzzing = []
+
+[dependencies]
+wt-core = { path = "../wt-core" }
+wt-proto = { path = "../wt-proto" }
+base64 = "0.22"
+bytes = "1.12"
+foldhash = "0.2"
+httparse = "1.10"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha1 = "0.10"
+slab = "0.4"
+socket2 = { version = "0.6", features = ["all"] }
+tokio = { version = "1", features = ["rt", "net", "io-util", "time", "sync", "macros", "signal"] }
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "logging", "tls12"] }
+papaya = "0.2.5"
+fastrand = "2.5"
+flate2 = { version = "1.1", default-features = false, features = ["zlib-rs"] }
+
+[dev-dependencies]
+futures-util = "0.3"
+# O_NONBLOCK / ENXIO for the FIFO in tests/shutdown.rs.
+libc = "0.2"
+miniz_oxide = "0.9.1"
+proptest = "1.11"
+rcgen = "0.14"
+tokio = { version = "1", features = ["rt-multi-thread"] }
+tokio-tungstenite = { version = "0.30", features = ["rustls-tls-webpki-roots"] }
